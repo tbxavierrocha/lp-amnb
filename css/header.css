@@ -1,0 +1,50 @@
+header {
+    background-color: #222;
+    padding: 25px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*
+header figure img{ 
+    width: 0;
+    height: 100px;
+    margin-bottom: 0;
+}*/
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 200;
+    margin-left: 0;
+    margin-right: 45%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    font-size: 1em;
+    font-weight: 100;
+    margin-left: 2%;
+    margin-right: 50%;
+    cursor: pointer;
+}
+
+header nav a {
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+
+header a {
+    color:#00e0ff;
+    transition: 0.2s ease-in-out;
+}
+
+header a:hover {
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}

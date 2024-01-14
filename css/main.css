@@ -1,0 +1,410 @@
+main {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Eu sou*/
+
+.container{
+    display: inline-flex;
+}
+
+.container .estatico{
+    color: rgb(73, 218, 169);
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.container .dinamico{
+    margin-left: 20px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dinamico li{
+    color:#00e0ff;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 100;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.dinamico li span{
+    position: relative;
+}
+
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.dinamico li span{
+    position: relative;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/*end Eu Sou*/
+/*Main Content*/
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2 {
+    margin-bottom: 1%;
+    font-size: 2em;
+    margin-right: 50%;
+
+}
+
+main .main-content .text {
+    margin-bottom: 5%;
+}
+
+main .main-content .text h3 {
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: justify;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+main .main-content .text p {
+    width: 90%;
+    font-size: 1.2em;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 5%;
+        width: 100%;
+    }
+}
+
+/*Habilidades*/
+
+main .habs .cards-containers {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+main .habs .cards-containers .card{
+
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .habs .cards-containers .card img {
+    width: 100%;
+}
+
+main .habs .cards-containers .card:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+
+/*Portifólio*/
+
+/*Blender*/
+
+main .port .container-blender .card_b {
+
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .container-blender .card_b h3{
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+main .port .cards-containers2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+main .port .cards-containers2 .card1{
+
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .cards-containers2 .card1 img {
+    width: 100%;
+}
+
+main .port .cards-containers2 .card1:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+main .port .leg-blen .legb {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+
+}
+
+main .port .leg-blen .legb .l1 {
+
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+    background-color: #42434e;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+/*Unity*/
+
+main .port .container-unity .card_u {
+
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .container-unity .card_u h3{
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+main .port .cards-containers3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+main .port .cards-containers3 .card2{
+
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .cards-containers3 .card2 img {
+    width: 100%;
+}
+
+main .port .cards-containers3 .card2:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+main .port .leg-unity .legu {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+}
+
+main .port .leg-unity .legu .l2 {
+
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+    background-color: #42434e;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+/*Solidworks*/
+
+main .port .container-solid .card_s {
+
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .container-solid .card_s h3{
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+main .port .cards-containers4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+main .port .cards-containers4 .card3{
+
+    width: 260px;
+    height: 260px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .port .cards-containers4 .card3 img {
+    width: 100%;
+}
+
+main .port .cards-containers4 .card3:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+main .port .leg-solid .legs {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+}
+
+main .port .leg-solid .legs .l3 {
+
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+    background-color: #42434e;
+    border-radius: 8px;
+    margin-right: 1.8em;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+
+/*Imagem Eu*/
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    margin-bottom: 95%;
+}
+
+main figure img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+
+    margin-bottom: 6%;
+    border: 1px #000 solid;
+    transition: 0.2s ease-in-out;
+}
+
+main figure img {
+    box-shadow: 0px 0px 20px #00e0ff;
+}
+
+footer {  
+    align-items: center;
+}

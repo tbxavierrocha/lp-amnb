@@ -1,0 +1,168 @@
+@media (max-width: 1000px) {
+    
+    main {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 100%;
+        align-items: center;
+
+        margin-bottom: 15%;
+    }
+
+    /*texto dinamico*/
+    .main-content .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content .container .estatico{
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .main-content .container .dinamico li{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    /*Minha formação*/
+    main .main-content .text {
+        text-align: center;
+    }
+
+    main .main-content .text h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    main .main-content .text h3 {
+        width: 95%;
+        font-size: 1.1em;
+        margin-left: 20px;
+    }
+
+    main .main-content .text h3 p {
+        width: 95%;
+        font-size: 1.5em;
+    }
+    /*habs*/
+    main .main-content .habs {
+        text-align: center;
+    }
+
+    main .main-content .habs h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    /*port*/
+    main .main-content .port {
+        text-align: center;
+    }
+
+    main .main-content .port h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    /*blender*/
+
+    /*label escrito BLENDER*/
+    main .main-content .port .container-blender {
+        justify-content: left;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    main .main-content .port .container-blender .card_b h3{
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    main .main-content .port .container-blender .cards-containers2,
+    main .main-content .port .container-unity .cards-containers3,
+    main .main-content .port .container-solid .cards-containers4 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    main .main-content .port .container-blender .cards-containers2 .card1,
+    main .main-content .port .container-unity .cards-containers3 .card2,
+    main .main-content .port .container-solid .cards-containers4 .card3
+    {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+    header h1{
+        font-size: 1.8em;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header nav {
+        margin-top: 24px;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+
+    .main .main-content .conteiner{
+        flex-direction: column;
+    }
+
+    .main .main-content .container .estatico{
+        margin-left: 1px;
+    }
+
+    .main .main-content .conteiner .text h3{
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    main .main-content .habs .cards-containers .card, main .main-content .habs .cards-containers .card_h {
+        flex-direction: column;
+        width: 60%;
+        height: 60%;
+    }
+
+    main .main-content .text h2, main .main-content .habs h2, main .main-content .port h2 {
+        font-size: 1.1em;
+    }
+
+    main .main-content .port .container-blender .card_b, main .main-content .port .container-unity .card_u, main .main-content .port .container-solid .card_s {
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    main .port .leg-blen .legb,
+    main .port .leg-unity .legu,
+    main .port .leg-solid .legs {
+        display: none;
+    }
+
+    main figure img{
+        width: 300px;
+        height: 300px;
+    }
+
+    
+}
